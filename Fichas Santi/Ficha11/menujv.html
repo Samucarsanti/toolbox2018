@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ficha11</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Ficha11.css">
+    <title>UMa Cantina</title>
+</head>
+
+<section>
+
+    <body>
+        <header>
+            <div class="container"></div>
+            <nav class="navbar navbar-expand-md navbar-light bg-light">
+                <div class="container">
+                    <a href="Ficha11.html">
+                        <h1>
+                            <span class="cor-principal">UMa</span>
+                            Cantina
+                        </h1>
+                    </a>
+                    <a class="navbar-brand" href="Ficha11.html"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="Ficha11.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="diviser py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item">
+                            <a href="menu.html" class="nav-link">Menu</a>
+                        </li>
+                        <li class="diviser py-2 d-none d-md-block cor-principal">/</li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">Acerca</a>
+                        </li>
+                        <li class="divider py-2 d-none d-md-block cor-principal">/</li>
+                        <a href="contact.html" class="nav-link">Contato</a>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#reservationmodal">
+                                Reservas
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row public-banner d-none d-md-flex px-3">
+                <img class="w-100 h-100" src="http://www.sasuma.pt/portal/img/banner/banner4.png" width="964" height="211"
+                    alt="UMa Cantina Banner">
+            </div>
+
+        </header>
+        <section>
+            <div class="container">
+                <div class="col-lg-12">
+                    <div class="row d-flex flex-wrap" id="cardapio">
+                        <div class="p-4" v-for="entry of posts">
+                            <h3 class="cor-principal">{{entry.prato}}</h3>
+                            <p class="obs">{{entry.obs}}</p>
+                            <p class="cor-principal preco">{{entry.total}} euros</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="col-lg-12 text-center">
+                    <h1>UMa Cantina</h1>
+                    <br>
+                    <br>
+                    <p>Rua de Santa Maria, n° 253 / Funchal / 291.123.123</p>
+                    <p>Horário: de segunda a sábado das 9:00hrs até as 14:00hrs</p>
+                    <br>
+                    <ul>
+                        <div class="social-media">
+                            <div class="social-media">
+                                <a href="http://facebook.com/">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="http://twitter.com/">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="http://pinterest.com/">
+                                    <i class="fab fa-pinterest"></i>
+                                </a>
+                                <a href="http://instagram.com/">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+                    <br>
+                    <p>&copy; 2017 Universidade da Madeira</p>
+                </div>
+            </div>
+
+        </footer>
+
+</section>
+<div class="modal fade" tabindex="-1" role="dialog" id="reservationmodal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title cor-principal">Reserva</h5>
+                <button type="button" class="close" data-dismiss="modal" arialabel="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label>Nome</label>
+                        <input type="text" class="form-control" placeholder="Insira
+   o nome do titular da reserva">
+                    </div>
+                    <div class="form-group">
+                        <label>Data</label>
+                        <input type="text" class="form-control" placeholder="Insira
+   a data pretendida">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" datadismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-danger">Reservar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.9/vue.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js"></script>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"> </script>
+<script src=" https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js">
+</script>
+
+
+
+
+
+<script>
+    new Vue({
+        el: '#cardapio',
+        created() {
+            this.fetchData();
+        },
+        data: {
+            posts: []
+        },
+        methods: {
+            fetchData() {
+                axios.get('https://final-project-recording817f4.firebaseio.com/cardapio/.json').then(response
+                    => {
+                    this.posts = response.data;
+                });
+            }
+        }
+    });
+</script>
+
+
+
+
+
+<script>
+    $(document).ready(function () {
+        $.getJSON('https://final-project-recording-817f4.firebaseio.com/cardapio/.json', function (data) {
+            var html = '';
+            $.each(data, function (entryIndex, entry) {
+                html += '<div class="entry p-4">';
+                html += '<h3 class="cor-principal">' + entry.prato + '</h3>';
+                html += '<p class="obs">' + entry.obs + '</p>';
+                html += '<p class="cor-principal preco">';
+                html += entry.total;
+                html += ' euros</p>';
+                html += '</div>';
+            });
+            $('#cardapio').html(html);
+        });
+    });
+</script>
+
+
+
+</body>
+
+</html>

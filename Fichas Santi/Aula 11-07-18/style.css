@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+}
+
+.quadrado--verde {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: green;
+}
+
+.quadrado--amarelo {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: yellow;
+}
+
+.quadrado--blue {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  background-color: blue;
+}
+
+.quadrado {
+  background-color: black;
+}
+
+.quadrado__foto {
+  color: green;
+}
+
+.quadrado__texto {
+  color: red;
+}
+
+.quadrado__botoes {
+  color: violet;
+}
+/*# sourceMappingURL=style.css.map */

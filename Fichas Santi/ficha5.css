@@ -1,0 +1,174 @@
+   .flex-container {
+    display: flex;
+    background-color: orange
+   }
+   .flex-wrap {
+    display: flex;
+    background-color: rosybrown
+   }
+   .justify-content {
+    display: flex;
+    background-color: rgb(0, 0, 0)
+   }
+   .align-items{
+       display: flex;
+       background-color: aqua
+   }
+   .align-content{
+       display: flex;
+       background-color: darkolivegreen
+   }
+
+   .row-reverse{
+    flex-direction: row-reverse;
+   }
+   .column {
+    flex-direction: column-reverse;
+   }
+   .column-reverse {
+    flex-direction: column-reverse;
+   }
+
+   .nowrap {
+    flex-wrap: nowrap;
+   }
+   .wrap {
+    flex-wrap: wrap;
+   }
+   .wrap-reverse     {
+    flex-wrap: wrap-reverse;
+   }
+
+   .start{
+       justify-content: flex-end;
+   }
+   .end{
+    justify-content: flex-start;
+}
+.center{
+    justify-content: center;
+}
+.spacebetween{
+    justify-content: space-between;
+}
+.spacearound{
+    justify-content: space-around;
+}
+
+
+.stretch{
+    align-items: stretch;
+}
+.flex-start{
+    align-items: flex-start;
+}
+.flex-end{
+    align-items: flex-end;
+}
+.flex-center{
+    align-items: center;
+}
+.baseline{
+    align-items: baseline;
+}
+
+.stretchc{
+    align-content: stretch;
+    height: 300px;
+    flex-wrap:wrap;
+}
+.flex-startt{
+    align-content: flex-start;
+    height: 300px;
+    flex-wrap:wrap;
+}
+.flex-endd{
+    align-content: flex-end;
+    height: 300px;
+    flex-wrap:wrap;
+}
+.space-betweenn{
+    align-content: space-between;
+    height: 300px;
+    flex-wrap:wrap;
+}
+.centerr{
+    align-content: center;
+    height: 300px;
+    flex-wrap:wrap;
+}
+.space-aroundd{
+    align-content: space-around;
+    height: 300px;
+    flex-wrap:wrap;
+}
+
+.flex-item{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color:blanchedalmond;
+}
+   .flex-item1{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color:green;
+}
+   .flex-item2{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: blue;
+}  
+   .flex-item3{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: red;
+}  
+   .flex-item4{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: white;
+} 
+.flex-item5{
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+    background-color: violet;
+} 
+.flex-item6{
+    width: 100px;
+    height: 70px;
+    margin: 10px;
+    background-color: blue;
+} 
+.cubop1{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color: white;
+} 
+.cubop2{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color:red;
+} 
+.cubop3{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color: blue;
+} 
+.cubop3{
+    width: 70px;
+    height: 70px;
+    margin: 10px;
+    background-color: green;
+} 
+p{
+    margin: 25px;
+}

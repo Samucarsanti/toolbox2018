@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>UMa: Residências Universitárias</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="https://academica.uma.pt/wp-content/uploads/2018/02/Log%C3%B3tipo-original.png?fbclid=IwAR3Lwse3mtSqQvjZBBcTJGqx2Rb1lTkiv0_XWTRGPfWJHFM2of028FeLGcA"
+                alt="logo">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Pesquisar residências">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="symbol-defs.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav_notification"></span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="user-nav__icon">
+                        <use xlink:href="symbol-defs.svg#icon-bubble"></use>
+                    </svg>
+                    <span class="user-nav__notification"></span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="data:image/png;base64,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"
+                        alt="User Photo" class="user-nav__user.photo" width="20px" height="20px">
+                    <span class="user-nav__user-name">Anónimo</span>
+                </div>
+
+            </nav>
+
+        </header>
+        <div class="content">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-home"></use>
+                            </svg>
+                            <span>Quartos</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-cart"></use>
+                            </svg>
+                            <span>Receção</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-spoon-knife"></use>
+                            </svg>
+                            <span>Bar</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icon">
+                                <use xlink:href="symbol-defs.svg#icon-pacman"></use>
+                            </svg>
+                            <span>Espaços</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="legal">
+                    Copyright &copy; UNIVERSIDADE DA MADEIRA
+                </div>
+            </nav>
+            <main class="residencia-view">
+                <div class="gallery">
+                    <figure class="gallery__item"><img src="img/QUARTO1.jpg" alt="quartos da residência" class="gallery__photo"></figure>
+                    <figure class="gallery__item"><img src="img/QUARTO3" alt="" class="gallery__photo"></figure>
+                    <figure class="gallery__item"><img src="img/recepcao2.jpg" alt="" class="gallery__photo"></figure>
+                    <figure class="gallery__item"><img src="img/bar.jpg" alt="" class="gallery__photo"></figure>
+                    <figure class="gallery__item"><img src="img/SALA.jpg" alt="" class="gallery__photo"></figure>
+                </div>
+                <div class="overview">
+                    <h1 class="overview__heading">
+                        RESIDÊNCIA LOS PIEDRÉROS DEL VALLE
+                    </h1>
+                    <div class="overview_stars">
+                        <svg class="overview__icon-star-full">
+                            <use xlink:href="symbol-defs.svg#icon-star-full"></use>
+                        </svg>
+                        <svg class="overview__icon-star-full">
+                            <use xlink:href="symbol-defs.svg#icon-star-full"></use>
+                        </svg>
+                        <svg class="overview__icon-star-full">
+                            <use xlink:href="symbol-defs.svg#icon-star-full"></use>
+                        </svg>
+                        <svg class="overview__icon-star-full">
+                            <use xlink:href="symbol-defs.svg#icon-star-full"></use>
+                        </svg>
+                        <svg class="overview__icon-star-full">
+                            <use xlink:href="symbol-defs.svg#icon-star-empty"></use>
+                        </svg>
+                    </div>
+
+                    <div class="overview__location">
+                        <svg class="overview__icon-location">
+                            <use xlink:href="symbol-defs.svg#icon-location"></use>
+                        </svg>
+                        <button class="btn-inline">Rusa de Italia endereço não encontrado nº404</button>
+                    </div>
+
+                    <div class="overview__rating">
+                        <div class="overview__rating-average">9.1</div>
+                        <div class="overview__rating-count">469 votos</div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="description">
+                        <p class="paragraph">
+                            Cá vai haver um parágrafo porque eu gosto de escrever e de que os meus sites tenham muita
+                            informação.
+                        </p>
+                        <p class="paragraph">
+                            Epale chamo, todo fino? Háblame claro menor, no sé que verga va a estar aquí pero acá ando
+                            mano, rellenando este beta para ver queloque hahaha.
+                        </p>
+                        <ul class="list">
+                            <li class="list__item">31 Duplos (beliche)</li>
+                            <li class="list__item">45 Triplos (beliche + cama)</li>
+                            <li class="list__item">6 Duplos para alunos NEE</li>
+                            <li class="list__item">Cozinha equipada</li>
+                            <li class="list__item">Sala de convívio</li>
+                            <li class="list__item">Jardins</li>
+                            <li class="list__item">Snack-Bar</li>
+                            <li class="list__item">Gabinete Médico</li>
+                        </ul>
+                        <div class="recommend">
+                            <p class="recommend__count">
+                                4 Estudantes recomendam.
+                            </p>
+                            <div class="recommend__friends">
+                                <img src="https://instagram.flis7-1.fna.fbcdn.net/vp/c8067071f56751209d36587b5242b4f7/5C7AC9D7/t51.2885-19/s150x150/30591097_175617243097170_149928275987136512_n.jpg"
+                                    alt="foto" class="recommend__photo">
+                                <img src="https://instagram.flis7-1.fna.fbcdn.net/vp/f81f81f62e78a240310170883fb843c2/5C6DD252/t51.2885-19/s150x150/35576182_1871141356277388_7158961951236685824_n.jpg"
+                                    alt="foto" class="recommend__photo">
+                                <img src="https://instagram.flis7-1.fna.fbcdn.net/vp/1bed1e61a001ef2efec9db5094992ec4/5C86F288/t51.2885-19/s150x150/27580324_1961241000859897_4541351977585475584_n.jpg"
+                                    alt="foto" class="recommend__photo">
+                                <img src="https://instagram.flis7-1.fna.fbcdn.net/vp/eb9aded373e4372792dabb15fd283cc3/5C7B7DF6/t51.2885-19/s150x150/43818140_2116018831763532_3803033961098117120_n.jpg"
+                                    alt="foto" class="recommend__photo">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-review">
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Convidei com um amigo que se chama Alex para ir á Residência para estudar, e gostei.
+                                Estudamos Biologia e ficamos muito bem!
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://instagram.flis7-1.fna.fbcdn.net/vp/c8067071f56751209d36587b5242b4f7/5C7AC9D7/t51.2885-19/s150x150/30591097_175617243097170_149928275987136512_n.jpg"
+                                    alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Mia Khalifa</p>
+                                    <p class="review__user-country">USA</p>
+                                </div>
+                                <div class="review__rating">9.1</div>
+                            </figcaption>
+                        </figure>
+                        <figure class="review">
+                            <blockquote class="review__text">
+                                Chamo-me Gilberto mas eu gosto mais de que me chamem como "Gil". Tudo fixe.
+                            </blockquote>
+                            <figcaption class="review__user">
+                                <img src="https://instagram.flis7-1.fna.fbcdn.net/vp/f81f81f62e78a240310170883fb843c2/5C6DD252/t51.2885-19/s150x150/35576182_1871141356277388_7158961951236685824_n.jpg"
+                                    alt="foto" class="review__photo">
+                                <div class="review__user-box">
+                                    <p class="review__user-name">Gilberto Veloza</p>
+                                    <p class="review__user-country">Portugal</p>
+                                </div>
+                                <div class="review__rating">8.5</div>
+                            </figcaption>
+                        </figure>
+                        <button class="btn-inline">Mostrar Todos <span>&rarr;</span></button>
+
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+</body>
+
+</html>

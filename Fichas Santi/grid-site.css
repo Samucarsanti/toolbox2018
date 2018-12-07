@@ -1,0 +1,64 @@
+@supports (display: grid) {
+    body{
+        background-color: #eee;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .gridwrapper {
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-gap: 1px;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: 10rem 2.75rem 10rem auto 2.75rem;
+        grid-template-areas: "header header header"
+     "nav nav nav"
+     "foco foco links"
+     "ultimas agenda links"
+     "footer footer footer";
+    
+    }
+    .gridItems {
+        background-color: lightblue;
+    }
+    header {
+        grid-area: header;
+        grid-column: 1 / span 3;
+        grid-row: 1 / 2;
+        background-image: url('https://www.chiquipedia.com/imagenes/imagenes-animo09.jpg');
+        background-position: center;
+        background-size: cover;
+       }
+    nav {
+        grid-area: nav;
+        display: grid;
+        grid-auto-flow: column;
+        align-content: space-evenly;
+       }
+    .LasItems {
+        margin-left: auto;
+       }
+    footer {
+        grid-area: footer;
+        display: grid;
+        grid-auto-flow: column;
+        align-content: space-between;
+        position: static;
+       }
+    .foco {
+        grid-area: foco;
+       }
+    .ultimas {
+        grid-area: ultimas;
+        width: 100%;
+       }
+    .agenda {
+        grid-area: agenda;
+        width: 100%;
+       }
+    .links {
+        grid-area: links;
+        width: 100%;
+       }
+}

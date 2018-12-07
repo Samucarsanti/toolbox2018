@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Ficha 9</title>
+    <style>
+        .container{
+            background-color: slateblue;
+            width: 100%;
+            height: 20vh;
+        }
+        .container2{
+            background-color: slateblue;
+            width: 100%;
+            height: 25vh;
+        }
+        .q1 {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: skyblue;
+            border: 3px solid black;
+            font-size: auto;
+            padding: 15px;
+        }
+        .q2 {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: green;
+            border: 3px solid black;
+        }
+        .q3 {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: yellow;
+            border: 3px solid black;
+            font-size: auto;
+            padding: 15px;
+        }
+        .q4 { 
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            background-color: yellow;
+            border: 3px solid black;
+            font-size: auto;
+            padding: 10px 0px 0px 18px;
+        }
+
+        .cajita1 { 
+            border: 3px solid black;
+            width: 90px;
+            height: 30px;
+            color: black; 
+            background:yellow;
+            font-size: auto;
+            padding: 0px 0px 30px 30px;
+            margin: 10px;
+            font-size: 25px;
+            
+        }
+        .cajita2 { 
+            border: 3px solid black;
+            width: 45px;
+            height: 90px;
+            color: black; 
+            background:yellow;
+            font-size: auto;
+            padding: 32px 0px 0px 4px;
+            margin: 10px;
+            font-size: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        }
+        .cajita3 { 
+            border: 3px solid black;
+            width: 60px;
+            height: 50px;
+            color: black; 
+            background:yellow;
+            font-size: auto;
+            padding: 0px 0px 0px 6px;
+            margin: 10px;
+            font-size: 29px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .cajita4 { 
+            border: 3px solid black;
+            width: 90px;
+            height: 90px;
+            color: black; 
+            background:yellow;
+            font-size: auto;
+            padding: 50px 0px 0px 20px;
+            margin: 10px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        .cajita5 { 
+            border: 3px solid black;
+            width: 80px;
+            height: 80px;
+            color: black; 
+            background:yellow;
+            font-size: auto;
+            padding: 15px 0px 0px 5px;
+            margin: 10px; 
+            font-size: 18px;
+            font-family: fantasy
+        }
+        .cajita6 { 
+            border: 3px solid black;
+            width: 90px;
+            height: 60px;
+            color: black; 
+            background:yellow;
+            font-size: auto;
+            padding: 0px 0px 30px 0px;
+            font-size: 40px;
+            margin: 10px;
+        }
+        .q5 {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: red;
+            border: 3px solid black;
+            font-size: auto;
+            padding: 20px 0px 0px 40px;
+            font-size: 30px;
+            color: white;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex com bootstrap</h1>
+    <section class="d-flex flex-row">
+        <!--section.d-flex.flex-row>button.btn-outline-primary.btn.m-3{$}*5-->
+        <p class="q1">Quadrado 1</p>
+        <p class="q1">Quadrado 2</p>
+        <p class="q1">Quadrado 3</p>
+        </div>
+    </section>
+    <h1>Flex-row-reverse</h1>
+    <section class="d-flex flex-row-reverse">
+           <div class="q1">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 3</p>
+        </div>
+    </section>
+    <h1>Flex-column</h1>
+    <section class="d-flex flex-column">
+        <div class="q1">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 3</p>
+        </div>
+    </section>
+    <h1>Flex-column-reverse</h1>
+    <section class="d-flex flex-column-reverse">
+   <div class="q1">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 3</p>
+        </div>
+    </section>
+    <h1>Flex-nowrap</h1>
+    <section class="d-flex flex-rowrap">
+        <div class="q1">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 3</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 4</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 5</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 6</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 7</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 8</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 9</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 10</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 11</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 12</p>
+        </div>
+    </section>
+    <h1>Flex-wrap</h1>
+    <section class="d-flex flex-wrap">
+         <div class="q1">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 3</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 4</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 5</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 6</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 7</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 8</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 9</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 10</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 11</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 12</p>
+        </div>
+    </section>
+    <h1>Flex-wrap-reverse</h1>
+    <section class="d-flex flex-wrap-reverse">
+         <div class="q1">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 3</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 4</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 5</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 6</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 7</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 8</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 9</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 10</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 11</p>
+        </div>
+        <div class="q1">
+        <p>Quadrado 12</p>
+        </div>
+    </section>
+    <h1>JUSTIFY CONTENT start</h1>
+    <section class="d-flex justify-content-start">
+        <div class="q2">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 3</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 4</p>
+        </div>
+    </section>
+    <h1>JUSTIFY CONTENT end</h1>
+    <section class="d-flex justify-content-end">
+        <div class="q2">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 3</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 4</p>
+        </div>
+    </section>
+    <h1>JUSTIFY CONTENT center</h1>
+    <section class="d-flex justify-content-center">
+        <div class="q2">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 3</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 4</p>
+        </div>
+    </section>
+    <h1>JUSTIFY CONTENT beetwen</h1>
+    <section class="d-flex justify-content-beetwen">
+        <div class="q2">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 3</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 4</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 5</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 6</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 7</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 8</p>
+        </div>
+    </section>
+    <h1>JUSTIFY CONTENT Space Around</h1>
+    <section class="d-flex justify-content-space-around">
+        <div class="q2">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 3</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 4</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 5</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 6</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 7</p>
+        </div>
+        <div class="q2">
+        <p>Quadrado 8</p>
+        </div>
+    </section>
+    <h1>ALIGN ITEMS stretch</h1>
+    <section class="d-flex align-items-stretch">
+        <div class="q3">
+        <p>Quadrado 1</p>
+        </div>
+        <div class="q3">
+        <p>Quadrado 2</p>
+        </div>
+        <div class="q3">
+        <p>Quadrado 3</p>
+        </div>
+        <div class="q3">
+        <p>Quadrado 4</p>
+        </div>
+        <div class="q3">
+        <p>Quadrado 5</p>
+        </div>
+        <div class="q3">
+        <p>Quadrado 6</p>
+        </div>
+        <div class="q3">
+        <p>Quadrado 7</p>
+        </div>
+        <div class="q3">
+        <p>Quadrado 8</p>
+        </div>
+    </section>
+    <h1>ALIGN ITEMS start</h1>
+    <section class="container d-flex align-items-start">
+        <div class="q4">
+        <p>1</p>
+        </div>
+        <div class="q4">
+        <p>2</p>
+        </div>
+        <div class="q4">
+        <p>3</p>
+        </div>
+        <div class="q4">
+        <p>4</p>
+        </div>
+        <div class="q4">
+        <p>5</p>
+        </div>
+        <div class="q4">
+        <p>6</p>
+        </div>
+        <div class="q4">
+        <p>7</p>
+        </div>
+        <div class="q4">
+        <p>8</p>
+        </div>
+    </section>
+    <h1>ALIGN ITEMS end</h1>
+    <section class="container d-flex align-items-end">
+        <div class="q4">
+        <p>1</p>
+        </div>
+        <div class="q4">
+        <p>2</p>
+        </div>
+        <div class="q4">
+        <p>3</p>
+        </div>
+        <div class="q4">
+        <p>4</p>
+        </div>
+        <div class="q4">
+        <p>5</p>
+        </div>
+        <div class="q4">
+        <p>6</p>
+        </div>
+        <div class="q4">
+        <p>7</p>
+        </div>
+        <div class="q4">
+        <p>8</p>
+        </div>
+    </section>
+    <h1>ALIGN ITEMS center</h1>
+    <section class="container d-flex align-items-center">
+        <div class="q4">
+        <p>1</p>
+        </div>
+        <div class="q4">
+        <p>2</p>
+        </div>
+        <div class="q4">
+        <p>3</p>
+        </div>
+        <div class="q4">
+        <p>4</p>
+        </div>
+        <div class="q4">
+        <p>5</p>
+        </div>
+        <div class="q4">
+        <p>6</p>
+        </div>
+        <div class="q4">
+        <p>7</p>
+        </div>
+        <div class="q4">
+        <p>8</p>
+        </div>
+    </section>
+    <h1>ALIGN ITEMS baseline</h1>
+    <section class="container d-flex align-items-baseline">
+        <p class="cajita2">Olá</p>
+        <p class="cajita1">eu</p>
+        <p class="cajita3">sou</p>
+        <p class="cajita4">um</p>
+        <p class="cajita5">exemplo</p>
+        <p class="cajita6">haha</p>
+
+    </section>
+    <h1>ALIGN ITEMS content flex-wrap</h1>
+    <section class=" container d-flex align-content-stretch flex-wrap">
+        <p class="q4">1</p>
+        <p class="q4">2</p>
+        <p class="q4">3</p>
+        <p class="q4">4</p>
+        <p class="q4">5</p>
+        <p class="q4">6</p>
+        <p class="q4">7</p>
+        <p class="q4">8</p>
+        <p class="q4">9</p>
+        <p class="q4">10</p>
+        <p class="q4">11</p>
+        <p class="q4">12</p>
+        <p class="q4">13</p>
+        <p class="q4">14</p>
+        <p class="q4">15</p>
+        <p class="q4">16</p>
+    </section>
+    <h1>ALIGN ITEMS start flex-wrap</h1>
+    <section class="container d-flex align-content-start flex-wrap">
+        <p class="q4">1</p>
+        <p class="q4">2</p>
+        <p class="q4">3</p>
+        <p class="q4">4</p>
+        <p class="q4">5</p>
+        <p class="q4">6</p>
+        <p class="q4">7</p>
+        <p class="q4">8</p>
+        <p class="q4">9</p>
+        <p class="q4">10</p>
+        <p class="q4">11</p>
+        <p class="q4">12</p>
+        <p class="q4">13</p>
+        <p class="q4">14</p>
+        <p class="q4">15</p>
+        <p class="q4">16</p>
+    </section>
+    <h1>------------ALIGN ITEMS end flex-wrap-------</h1>
+    <section class="container d-flex align-content-end flex-wrap">
+        <p class="q4">1</p>
+        <p class="q4">2</p>
+        <p class="q4">3</p>
+        <p class="q4">4</p>
+        <p class="q4">5</p>
+        <p class="q4">6</p>
+        <p class="q4">7</p>
+        <p class="q4">8</p>
+        <p class="q4">9</p>
+        <p class="q4">10</p>
+        <p class="q4">11</p>
+        <p class="q4">12</p>
+        <p class="q4">13</p>
+        <p class="q4">14</p>
+        <p class="q4">15</p>
+        <p class="q4">16</p>
+        <p class="q4">17</p>
+        <p class="q4">18</p>
+        <p class="q4">19</p>
+        <p class="q4">20</p>
+        <p class="q4">21</p>
+        <p class="q4">22</p>
+        <p class="q4">23</p>
+    </section>
+    <h1>---------------ALIGN ITEMS center flex-wrap-------------</h1>
+    <section class="container2 d-flex align-content-center flex-wrap">
+        <p class="q4">1</p>
+        <p class="q4">2</p>
+        <p class="q4">3</p>
+        <p class="q4">4</p>
+        <p class="q4">5</p>
+        <p class="q4">6</p>
+        <p class="q4">7</p>
+        <p class="q4">8</p>
+        <p class="q4">9</p>
+        <p class="q4">10</p>
+        <p class="q4">11</p>
+        <p class="q4">12</p>
+        <p class="q4">13</p>
+        <p class="q4">14</p>
+        <p class="q4">15</p>
+        <p class="q4">16</p>
+    </section>
+    <h1>---------------ALIGN ITEMS content-around flex-wrap-------------</h1>
+    <section class="container2 d-flex align-content-around flex-wrap">
+        <p class="q4">1</p>
+        <p class="q4">2</p>
+        <p class="q4">3</p>
+        <p class="q4">4</p>
+        <p class="q4">5</p>
+        <p class="q4">6</p>
+        <p class="q4">7</p>
+        <p class="q4">8</p>
+        <p class="q4">9</p>
+        <p class="q4">10</p>
+        <p class="q4">11</p>
+        <p class="q4">12</p>
+        <p class="q4">13</p>
+        <p class="q4">14</p>
+        <p class="q4">15</p>
+        <p class="q4">16</p>
+        <p class="q4">17</p>
+        <p class="q4">18</p>
+        <p class="q4">19</p>
+        <p class="q4">20</p>
+        <p class="q4">21</p>
+        <p class="q4">22</p>
+        <p class="q4">23</p>
+    </section>
+    <h1>FLEX-NOWRAP order</h1>
+    <section class="container d-flex flex-nowrap">
+        <p class="order-1 q5">1</p>
+        <p class="q5">2</p>
+        <p class="order-3 q5">3</p>
+        <p class="order-first q5">4</p>
+        <p class="q5">5</p>
+        <p class="q5">6</p>
+    </section>
+    <h1>FLEX-NOWRAP order tamanhos</h1>
+    <section class="container d-flex flex-nowrap">
+        <p class="align-self-start q4">1</p>
+        <p class="align-self-end q4">2</p>
+        <p class="align-self-center cajita2">3</p>
+        <p class="align-self-baseline q4">4</p>
+        <p class="align-self-stretch q4">5</p>
+        <p class="cajita4">6</p>
+    </section>
+
+</body>
+
+</html>
